@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layoutBackground"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/mini_scoreboard_portrait"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/summaryHeaderBackground">
+
+        <TextView
+            android:id="@+id/half_current"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="4dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/half_current"
+            android:textColor="@color/colorHalfCurrent"
+            android:textSize="12sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/timer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/half_current"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:gravity="center"
+            android:text="@string/timer"
+            android:textColor="@color/colorTimer"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/mini_scoreboard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/timer"
+            android:layout_marginTop="4dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/score_current"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/score_current"
+                android:textColor="@color/colorScoreText"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/score_current_a"
+                    style="@style/totalScore"
+                    android:layout_weight="6"
+                    android:gravity="end"
+                    android:text="@string/score_current_a" />
+
+                <TextView
+                    style="@style/totalScore"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/hyphen" />
+
+                <TextView
+                    android:id="@+id/score_current_b"
+                    style="@style/totalScore"
+                    android:layout_weight="6"
+                    android:text="@string/score_current_b" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/ScoreRulesText"
+                    android:text="@string/goal_text" />
+
+                <TextView
+                    style="@style/ScoreRulesText"
+                    android:text="@string/foul_text" />
+
+                <TextView
+                    style="@style/ScoreRulesText"
+                    android:text="@string/penalty_text" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mini_scoreboard_portrait"
+        android:orientation="horizontal">
+
+        <!-- Team A -->
+        <LinearLayout style="@style/LayoutStyle">
+
+            <TextView
+                style="@style/TeamHeading"
+                android:text="@string/team_a" />
+
+            <TextView
+                android:id="@+id/score_a_first_half"
+                style="@style/Score"
+                android:text="@string/score_a_first_half" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/goals_a_first_half"
+                    style="@style/DetailsCount"
+                    android:text="@string/goal_a_first_half" />
+
+                <TextView
+                    android:id="@+id/fouls_a_first_half"
+                    style="@style/DetailsCount"
+                    android:text="@string/foul_a_first_half" />
+
+                <TextView
+                    android:id="@+id/penalties_a_first_half"
+                    style="@style/DetailsCount"
+                    android:text="@string/penalty_a_first_half" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <Button
+                    style="@style/ButtonStyle"
+                    android:onClick="addGoalPointsForTeamA"
+                    android:text="@string/goal" />
+
+                <Button
+                    style="@style/ButtonStyle"
+                    android:onClick="addFoulPointsForTeamA"
+                    android:text="@string/foul" />
+
+                <Button
+                    style="@style/ButtonStyle"
+                    android:onClick="addPenaltyPointsForTeamA"
+                    android:text="@string/penalty" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/goals_a_second_half"
+                    style="@style/DetailsCount"
+                    android:text="@string/goal_a_second_half" />
+
+                <TextView
+                    android:id="@+id/fouls_a_second_half"
+                    style="@style/DetailsCount"
+                    android:text="@string/foul_a_second_half" />
+
+                <TextView
+                    android:id="@+id/penalties_a_second_half"
+                    style="@style/DetailsCount"
+                    android:text="@string/penalty_a_second_half" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/score_a_second_half"
+                style="@style/Score"
+                android:text="@string/score_a_second_half" />
+
+        </LinearLayout>
+
+        <!-- Separator -->
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="#344955" />
+
+        <!-- Team B -->
+        <LinearLayout style="@style/LayoutStyle">
+
+            <TextView
+                style="@style/TeamHeading"
+                android:text="@string/team_b" />
+
+            <TextView
+                android:id="@+id/score_b_first_half"
+                style="@style/Score"
+                android:text="@string/score_b_first_half" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/goals_b_first_half"
+                    style="@style/DetailsCount"
+                    android:text="@string/goal_b_first_half" />
+
+                <TextView
+                    android:id="@+id/fouls_b_first_half"
+                    style="@style/DetailsCount"
+                    android:text="@string/foul_b_first_half" />
+
+                <TextView
+                    android:id="@+id/penalties_b_first_half"
+                    style="@style/DetailsCount"
+                    android:text="@string/penalty_b_first_half" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <Button
+                    style="@style/ButtonStyle"
+                    android:onClick="addGoalPointsForTeamB"
+                    android:text="@string/goal" />
+
+                <Button
+                    style="@style/ButtonStyle"
+                    android:onClick="addFoulPointsForTeamB"
+                    android:text="@string/foul" />
+
+                <Button
+                    style="@style/ButtonStyle"
+                    android:onClick="addPenaltyPointsForTeamB"
+                    android:text="@string/penalty" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/goals_b_second_half"
+                    style="@style/DetailsCount"
+                    android:text="@string/goal_b_second_half" />
+
+                <TextView
+                    android:id="@+id/fouls_b_second_half"
+                    style="@style/DetailsCount"
+                    android:text="@string/foul_b_second_half" />
+
+                <TextView
+                    android:id="@+id/penalties_b_second_half"
+                    style="@style/DetailsCount"
+                    android:text="@string/penalty_b_second_half" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/score_b_second_half"
+                style="@style/Score"
+                android:text="@string/score_b_second_half" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/control_time_button_play"
+        style="@style/PlayPausePortrait"
+        android:background="@drawable/ic_baseline_play_circle_filled_24_portrait"
+        android:onClick="playGame"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/control_time_button_pause"
+        style="@style/PlayPausePortrait"
+        android:background="@drawable/ic_baseline_pause_circle_filled_24_portrait"
+        android:onClick="pauseGame"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/control_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="sans-serif-medium"
+        android:onClick="resetScores"
+        android:text="@string/control_button"
+        android:textColor="@color/colorControlButtonText"
+        android:textSize="14sp"
+        android:visibility="invisible" />
+
+</RelativeLayout>

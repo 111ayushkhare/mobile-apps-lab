@@ -1,0 +1,99 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+
+        <item name="colorButtonNormal">@color/colorButtonNormal</item>
+    </style>
+
+    <!-- Styling of total score -->
+    <style name="totalScore">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="fontFamily">sans-serif-light</item>
+        <item name="android:textColor">@color/colorTotalScore</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Styling of scoring rules -->
+    <style name="ScoreRulesText">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="fontFamily">sans-serif-medium</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/colorScoreRules</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_margin">2dp</item>
+    </style>
+
+    <!-- Styling of team layouts -->
+    <style name="LayoutStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:layout_marginEnd">8dp</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <!-- Styling of team heading names -->
+    <style name="TeamHeading">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/colorTeamHeading</item>
+        <item name="fontFamily">sans-serif-medium</item>
+    </style>
+
+    <!-- Styling of score of both the teams in both halves -->
+    <style name="Score">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:padding">4dp</item>
+        <item name="fontFamily">sans-serif-light</item>
+        <item name="android:textColor">@color/colorHalfScore</item>
+        <item name="android:textSize">56sp</item>
+        <item name="android:layout_marginBottom">12dp</item>
+    </style>
+
+    <!-- Styling of Goal count, Foul count, Penalty count -->
+    <style name="DetailsCount">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/colorScoreDetails</item>
+        <item name="android:textSize">14sp</item>
+        <item name="fontFamily">sans-serif-medium</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Styling of points buttons -->
+    <style name="ButtonStyle">
+        <item name="android:textStyle">bold</item>
+        <item name="fontFamily">sans-serif-light</item>
+        <item name="android:textColor">@color/colorButtonText</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- Styling of play/pause buttons -->
+    <style name="PlayPausePortrait">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_above">@id/control_button</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginBottom">8dp</item>
+    </style>
+
+</resources>

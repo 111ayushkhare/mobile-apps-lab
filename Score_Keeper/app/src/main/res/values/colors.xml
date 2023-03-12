@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#344955</color>
+    <color name="colorPrimaryDark">#232F34</color>
+    <color name="colorAccent">#B9E4C9</color>
+
+    <color name="colorButtonNormal">#F9AA33</color>
+    <color name="layoutBackground">#FFFBE6</color>
+
+    <!-- Color of layout with total scores and the timer -->
+    <color name="summaryHeaderBackground">@color/colorAccent</color>
+
+    <!-- Color of text displaying current half/break -->
+    <color name="colorHalfCurrent">@color/colorPrimary</color>
+
+    <!-- Color of the TIMER text -->
+    <color name="colorTimer">@color/colorPrimaryDark</color>
+
+    <!-- Color of the SCORE text -->
+    <color name="colorScoreText">@color/colorPrimary</color>
+
+    <!-- Color of the TOTAL SCORE text -->
+    <color name="colorTotalScore">@color/colorPrimaryDark</color>
+
+    <!-- Color of SCORE RULES text -->
+    <color name="colorScoreRules">@android:color/white</color>
+
+    <!-- Color of TEAM HEADING text -->
+    <color name="colorTeamHeading">@color/colorPrimary</color>
+
+    <!-- Color of the SCORES in the CURRENT HALVES -->
+    <color name="colorHalfScore">@android:color/black</color>
+
+    <!-- Color of the SCORE DETAILS text -->
+    <color name="colorScoreDetails">@color/colorPrimary</color>
+
+    <!-- Color of the SCORE DETAILS BUTTON text -->
+    <color name="colorButtonText">@color/colorPrimaryDark</color>
+
+    <!-- Color of the RESET button text -->
+    <color name="colorControlButtonText">@color/colorPrimaryDark</color>
+
+</resources>

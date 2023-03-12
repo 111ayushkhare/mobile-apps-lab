@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Current half -->
+    <string name="half_current" tools:ignore="ExtraTranslation">~~~ About to start ~~~</string>
+    <string name="half_current_first" tools:ignore="ExtraTranslation">--- 1st Half ---</string>
+    <string name="half_current_break" tools:ignore="ExtraTranslation">--- Break ---</string>
+    <string name="half_current_second" tools:ignore="ExtraTranslation">--- 2nd Half ---</string>
+    <string name="time_over" tools:ignore="ExtraTranslation">Time\'s over !!!</string>
+
+    <!-- Current score text -->
+    <string name="score_current" tools:ignore="ExtraTranslation">Score</string>
+
+    <!-- Team name abbreviation -->
+    <string name="team_a_abbv" tools:ignore="ExtraTranslation">A</string>
+    <string name="team_b_abbv" tools:ignore="ExtraTranslation">B</string>
+
+    <!-- Current scores -->
+    <string name="score_current_a" tools:ignore="ExtraTranslation">0</string>
+    <string name="hyphen" tools:ignore="ExtraTranslation"> - </string>
+    <string name="score_current_b" tools:ignore="ExtraTranslation">0</string>
+
+    <!-- Half Label -->
+    <string name="first_half" tools:ignore="ExtraTranslation">1st-Half Statistics</string>
+    <string name="second_half" tools:ignore="ExtraTranslation">2nd-Half Statistics</string>
+
+    <!-- Fixed scores text on buttons -->
+    <string name="goal_count" tools:ignore="ExtraTranslation">Goal (+5)</string>
+    <string name="foul_count" tools:ignore="ExtraTranslation">Foul (-1)</string>
+    <string name="penalty_count" tools:ignore="ExtraTranslation">Penalty (-3)</string>
+
+</resources>

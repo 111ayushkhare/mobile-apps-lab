@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+
+        <item name="colorButtonNormal">@color/colorButtonNormal</item>
+    </style>
+
+    <!-- Styling of team headings in short -->
+    <style name="TeamHeadingShort">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="fontFamily">sans-serif-medium</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <!-- Styling of total score -->
+    <style name="totalScore">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="fontFamily">sans-serif-light</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Styling of play/pause button -->
+    <style name="PlayPause">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_above">@id/control_button</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_margin">16dp</item>
+    </style>
+
+    <!-- Styling of team layouts -->
+    <style name="LayoutStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">2</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:layout_marginEnd">8dp</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <!-- Styling of team heading names -->
+    <style name="TeamHeading">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/colorTeamHeading</item>
+        <item name="fontFamily">sans-serif-medium</item>
+    </style>
+
+    <!-- Styling of score of both the teams in both halves -->
+    <style name="Score">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="fontFamily">sans-serif-light</item>
+        <item name="android:textColor">@color/colorHalfScore</item>
+        <item name="android:textSize">48sp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+    </style>
+
+    <!-- Styling of heading displaying half -->
+    <style name="HalfHeading">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="fontFamily">sans-serif-condensed-light</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <!-- Styling of Details count, Buttons Layout -->
+    <style name="DetailsCountButtonLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <!-- Styling of Goal count, Foul count, Penalty count -->
+    <style name="DetailsCount">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textColor">@color/colorScoreDetails</item>
+        <item name="android:textSize">14sp</item>
+        <item name="fontFamily">sans-serif-medium</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Styling of points buttons -->
+    <style name="ButtonStyle">
+        <item name="android:textStyle">bold</item>
+        <item name="fontFamily">sans-serif-light</item>
+        <item name="android:textColor">@color/colorButtonText</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_weight">2</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+</resources>

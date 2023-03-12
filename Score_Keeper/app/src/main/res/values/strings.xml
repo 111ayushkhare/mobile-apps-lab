@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">Score Keeper</string>
+
+    <!-- Timer Text -->
+    <string name="timer">01:00</string>
+
+    <!-- Current half Portrait-->
+    <string name="half_current">~~~ About to start ~~~</string>
+    <string name="half_current_first">--- 1st Half ---</string>
+    <string name="half_current_break">::: Break :::</string>
+    <string name="half_current_second">--- 2nd Half ---</string>
+    <string name="time_over">!!! Time\'s over !!!</string>
+
+    <!-- Current score text Portrait -->
+    <string name="score_current">Score</string>
+
+    <!-- Team name abbreviation Portrait -->
+    <string name="team_a_abbv">A</string>
+    <string name="team_b_abbv">B</string>
+
+    <!-- Current scores Portrait -->
+    <string name="score_current_a">0</string>
+    <string name="hyphen"> - </string>
+    <string name="score_current_b">0</string>
+
+    <!-- Team names -->
+    <string name="team_a">Team A</string>
+    <string name="team_b">Team B</string>
+
+    <!-- Fixed Scores -->
+    <string name="goal">+5</string>
+    <string name="foul">-1</string>
+    <string name="penalty">-3</string>
+
+    <!-- First half, Team A -->
+    <string name="score_a_first_half">0</string>
+    <string name="goal_a_first_half">0</string>
+    <string name="foul_a_first_half">0</string>
+    <string name="penalty_a_first_half">0</string>
+
+    <!-- First half, Team B -->
+    <string name="score_b_first_half">0</string>
+    <string name="goal_b_first_half">0</string>
+    <string name="foul_b_first_half">0</string>
+    <string name="penalty_b_first_half">0</string>
+
+    <!-- Second half, Team A -->
+    <string name="score_a_second_half">0</string>
+    <string name="goal_a_second_half">0</string>
+    <string name="foul_a_second_half">0</string>
+    <string name="penalty_a_second_half">0</string>
+
+    <!-- Second half, Team B -->
+    <string name="score_b_second_half">0</string>
+    <string name="goal_b_second_half">0</string>
+    <string name="foul_b_second_half">0</string>
+    <string name="penalty_b_second_half">0</string>
+
+    <!-- Score Rules Text -->
+    <string name="goal_text">Goal (+5)</string>
+    <string name="foul_text">Foul (-1)</string>
+    <string name="penalty_text">Penalty (-3)</string>
+
+    <string name="control_button">Reset</string>
+    <string name="control_button_2">Score Again</string>
+
+</resources>
