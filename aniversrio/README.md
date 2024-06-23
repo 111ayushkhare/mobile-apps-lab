@@ -1,2 +1,0 @@
-# aniversrio
- Happy Birthday app
